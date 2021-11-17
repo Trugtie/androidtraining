@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">thongtincanhan(constraint)</string>
+    <string name="thong_tin_ca_nhan">Personal Information</string>
+    <string name="ho_ten">Name: </string>
+    <string name="cmnd">Id_code: </string>
+    <string name="gioi_tinh">Gender</string>
+    <string name="nam">Male</string>
+    <string name="nu">Female</string>
+    <string name="khong_xac_dinh">Undefined</string>
+    <string name="so_thich">Hoppy</string>
+    <string name="an_ngon">Food</string>
+    <string name="mac_dep">Fashion</string>
+    <string name="choi_game">Game</string>
+    <string name="thong_tin_khac">Others</string>
+    <string name="luu_thong_tin">Save</string>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeaderBack"
+        android:gravity="center"
+        android:text="@string/thong_tin_ca_nhan"
+        android:textColor="@color/colorHeaderText"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/ho_ten"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toStartOf="@+id/txtHoTen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+
+    <EditText
+        android:id="@+id/txtHoTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/cmnd"
+        android:textColor="@color/colorText"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintEnd_toStartOf="@+id/txtCMND"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHoTen" />
+
+    <EditText
+        android:id="@+id/txtCMND"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="151dp"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/gioi_tinh"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioButton
+        android:id="@+id/rdbNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nam"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdbNu"
+        app:layout_constraintEnd_toStartOf="@+id/rdbNu"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rdbNu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nu"
+        app:layout_constraintEnd_toStartOf="@+id/rdbKhongXacDinh"
+        app:layout_constraintStart_toEndOf="@+id/rdbNam"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <RadioButton
+        android:id="@+id/rdbKhongXacDinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/khong_xac_dinh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdbNu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rdbNu" />
+
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/so_thich"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbNam" />
+
+
+    <CheckBox
+        android:id="@+id/ckbAnNgon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="@string/an_ngon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ckbMacDep"
+        app:layout_constraintEnd_toStartOf="@+id/ckbChoiGame"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ckbMacDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mac_dep"
+        app:layout_constraintEnd_toStartOf="@+id/ckbChoiGame"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <CheckBox
+        android:id="@+id/ckbChoiGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="@string/choi_game"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ckbMacDep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ckbAnNgon" />
+
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/thong_tin_khac"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbAnNgon" />
+
+    <EditText
+        android:id="@+id/txtThongTinKhac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="top"
+        android:text=""
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/luu_thong_tin"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

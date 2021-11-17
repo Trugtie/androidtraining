@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab04_DanhSachLop</string>
+    <string-array name="arr_ds_lop">
+        <item>
+            Trịnh Văn Lễ - DH9865541
+        </item>
+        <item>
+            Huỳnh Hồng Học - DH321567
+        </item>
+        <item>
+           Vương Thái Xuyên - DH1456487
+        </item>
+        <item>
+            Hàng Lợi Liên - DH3123124512
+        </item>
+        <item>
+            Đoàn Thị Lê Minh - DH31234
+        </item>
+    </string-array>
+</resources>
